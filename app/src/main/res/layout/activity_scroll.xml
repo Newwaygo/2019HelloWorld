@@ -1,0 +1,61 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:transitionName="picture"
+        app:layout_behavior="newway.com.cn.easybehavior.behavior.AppBarLayoutOverScrollViewBehavior"
+        tools:targetApi="lollipop">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            app:statusBarScrim="@color/colorPrimaryDark">
+
+            <ImageView
+                android:id="@+id/siv_picture"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:fitsSystemWindows="true"
+                android:background="@drawable/image_default_banner"
+                android:scaleType="centerCrop"
+                android:tag="overScroll"
+                app:layout_collapseMode="parallax"
+                />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetEnd="64dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新学期的开始，我积极参加了新学期的学习会议，受益匪浅。作为新时代的一名人民教师，就要转变观念，转变作风，不断提高自己的能力，把工作落到实处。不能再守着以前旧的教学观念来继续现在的工作。以下就是我结合自己工作对本次学习的所得：
+首先，要确认自己的责任，坚持兴国必先强师，深刻认识教师队伍建设的重要意义和总体要求。教师承担着传播知识、传播思想、传播真理的历史使命，肩负着塑造灵魂、塑造生命、塑造人的时代重任，是国家富强、民族振兴、人民幸福的重要基石。因此，我们得全面贯彻落实党的十九大精神，以习近平新时代中国特色社会主义思想为指导，坚持和加强党的全面领导，全面贯彻党的教育方针，坚持社会主义办学方向，落实立德树人为本根本任务，遵循教育规律和教师成长发展规律，加强师德师风建设。我们得加强理想信念教育，深入学习领会习近平新时代中国特设社会主义思想，树立正确的 历史观、民族观、国家观、文化观，坚定中国特色社会主义道路。为大力振兴教师教育而努力，不断提高自己得专业素质,用过硬的专业知识，个人的专业素养去感染新时代的学生。其次，我们要发扬钉钉子得精神，虽然作为千千万万教师中的一名，能做的实在有限，但只要努力做好自己该做的，尽到自己的责任，就可以问心无愧。读书学习是党员干部成长进步的最好阶梯，活到老学到老，不断学习才能不断进步，教师以身作则，营造学习氛围，也能对学生起到感染带动作用。教师和学生不再是以前的上下级关系，新时代的教学中，学生和教师应该是平等的关系，教学过程教师起引导作用，不再是主导整个课堂，学生为主体，改掉以前满堂灌的教学模式，这样才能更好的调动学生主动学习的积极性，提高学生的团结合作意识，自主探究的能力。当然，平等对待学生，还可以减少师生间的矛盾，从而降低学生因对教师的个人意见而产生的厌学心理。观念是行动的先导，作风是干事的保证，因此，勿陷“惯性思维”泥潭。以旧观念旧模式应对新问题新形势，前进的脚步必然会受到阻滞。能否打破格式化、套路化惯性思维，关键就看能不能以问题为导向、一切从实际出发。习惯若不是最好的仆人，便是最差的主人。经过检验的习惯，能减少从无到有的探索成本，让人们少走弯路，提高效率。但正如一位科学家所说：妨碍人们创新的最大阻碍，并不是未知的东西，而是已知的东西。被惯性思维主导以线性逻辑或单一视角看待复杂的事物，其实是片面的、静止的、僵化的。惯性思维常常躲藏在人们身后，非经认真省察难以摆脱。这也是教育中容易遇见的问题，不同的教学对象，就得采用不同的教学方式，因材施教，才能最大化的激发学生的潜力。纠正“四风”也不能止步。不久前，习近平总书记在新华社一篇《形式主义、官僚主义新表现值得警惕》的文章上就“四风”问题作出重要指示，指出文章反映的情况，看似新表现，实则老问题，再次表现“四风”问题具有顽固性反复性。在教学中，同样存在这类问题，在实际教学中，不能只注重形式，更要看重的是教学实际效果，所以经常和同事之间进行教学交流很有必要，相互学习，相互促进教学方式。然而，光有新的观念还不够，也要有良好的师德修养，过硬的专业素质，最后一点，还的要落到实处，不能只会说。崇尚实干、狠抓落实，这是习近平总书记反复强调的，也是党的十八大以来党和国家事业发生历史性变革、取得历史性成就的重要经验。党的十九大指明了党和国家事业前进方向，为中国这艘承载着13亿多人的巨轮前立起了新的航标。当然，影响国家的事我们还没那个能力，不过只要每个人把每一件小事做好，国家也会进步。当我们将每一件简单的事情做好，做的不简单；当我们将每一件平凡的事情做好，做的不平凡，便是成功之时。对每个人而言，一旦走上社会，从事某个职业，就意味着你开始做事。你能否在岗位上成才，自然取决于你对岗位的热爱程度。热爱与否，关键看你是否将每一件简单的事、平凡的事做好。干一行、爱一行、专一行。大道至简，实干为要。事无大小，靠的都是脚踏实地、一点一滴干出来的。不用差不多，盯住最完美，最好长计划，制定短安排，立马就上手。在学中干、在干中学，两手抓、两不误、两促进。如果只有计划，而没有执行力，那么一切都是零。而真正的执行力，不是冲动的决定，而是强有力的行动加长久的坚持。
+作为新时代的教师，也有自己的坚持。坚持以习近平新时代中国特色社会主义思想为指导，拥护中国共产党的领导，贯彻党的教育方针；不得在教育教学活动中及其他场所有损党中央权威、违背党的路线方针政策的言行。自觉爱国守法，忠于祖国、忠于人民，恪守宪法原则，遵守法律法规，依法履行教师职责。潜心教书育人，落实立德树人根本任务，遵循教育规律和学生成长规律，因材施教，教学相长。关心爱护学生，坚持言行雅正，遵守学术规范，秉持公平诚信 ，坚持廉洁自律，积极奉献社会。 而我，在不断的秉持着这些信念前进着，努力着。
+"      />
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
